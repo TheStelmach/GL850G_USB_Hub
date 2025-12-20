@@ -3,7 +3,7 @@ Contains one High-Speed upstream port and four independent downstream HS/FS port
 
 Designed for easy hand assembly, with only two 0402 capacitors for crystal. All bootstrapping and IO pins are easily accessible on the board.
 
-<img src="GL850G.png" alt="Alt text" width="500" height="300">
+<img src="GL850G.png" alt="Alt text" width="1000">
 
 Components are only placed on top layer.
 
