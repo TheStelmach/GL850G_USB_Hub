@@ -6,4 +6,5 @@ Designed for easy hand assembly, with only two 0402 capacitors for crystal. All 
 <img src="GL850G.png" alt="Alt text" width="500" height="300">
 
 Components are only placed on top layer.
+
 <img src="GL850G_back.png" alt="Alt text" width="500" height="300">
