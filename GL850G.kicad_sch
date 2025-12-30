@@ -3165,6 +3165,17 @@
 		)
 		(uuid "a19d842c-ced2-4a85-9981-3c60d0fa7e1b")
 	)
+	(text "Notes from board debugging:\n\nR5 - remove if you want to have it powered from the upstream bus.\nOtherwise, power needs to come separately\n\nD9 changed to D2"
+		(exclude_from_sim no)
+		(at 17.272 206.756 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+			)
+			(justify left top)
+		)
+		(uuid "ea7f0f53-2e59-4156-96ec-0859f541bbb4")
+	)
 	(junction
 		(at 60.96 39.37)
 		(diameter 0)
@@ -6589,7 +6600,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "100nF"
 			(at 197.104 141.732 0)
 			(effects
 				(font
@@ -6598,7 +6609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 198.12 139.7 0)
 			(effects
 				(font
@@ -6667,7 +6678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 262.89 38.1 0)
 			(effects
 				(font
@@ -7077,7 +7088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 92.71 133.35 0)
 			(effects
 				(font
@@ -9358,7 +9369,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 152.4 38.1 0)
 			(effects
 				(font
@@ -9495,7 +9506,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "500"
 			(at 73.66 44.196 0)
 			(effects
 				(font
@@ -9685,7 +9696,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 96.52 90.17 0)
 			(effects
 				(font
@@ -9955,7 +9966,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 189.23 38.1 0)
 			(effects
 				(font
@@ -10890,7 +10901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 213.36 146.05 0)
 			(effects
 				(font
@@ -12158,8 +12169,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1563bc2-2504-46b6-9fa4-63ff00eee084")
-		(property "Reference" "D9"
-			(at 61.976 40.64 0)
+		(property "Reference" "D2"
+			(at 63.246 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12257,7 +12268,7 @@
 		(instances
 			(project "GL850G"
 				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
-					(reference "D9")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12493,7 +12504,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 48.26 127 0)
 			(effects
 				(font
@@ -12964,7 +12975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 226.06 38.1 0)
 			(effects
 				(font
