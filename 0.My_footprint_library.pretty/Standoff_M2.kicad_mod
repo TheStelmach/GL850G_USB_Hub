@@ -1,0 +1,80 @@
+(footprint "Standoff_M2"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -6.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "489a713b-6592-4d18-beef-ecf8ee78f4dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Standoff_M2"
+		(at 0 -4.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "63fcd415-86bd-42b7-a0da-3858caeaf7bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c64a2a7-a339-4a03-968c-2874d7ae2aa1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f124a86a-ae49-45ed-a2e5-9c9845d06c66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 -3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "85c88860-a8de-45f2-bccb-1e8ba17f3c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 4.45 4.45)
+		(drill 2.9)
+		(property pad_prop_mechanical)
+		(layers "*.Cu" "F.Mask" "F.SilkS" "F.Adhes" "F.Paste")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(uuid "1513158d-d524-460b-b11b-19d09a64f5cc")
+	)
+	(embedded_fonts no)
+)
