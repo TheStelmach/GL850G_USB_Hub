@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.18
+          "min_clearance": 1.0
         }
       },
       "diff_pair_dimensions": [
@@ -533,10 +533,22 @@
       "/D0P": [
         "USB_90R"
       ],
+      "/D0_N": [
+        "USB_90R"
+      ],
+      "/D0_P": [
+        "USB_90R"
+      ],
       "/D1N": [
         "USB_90R"
       ],
       "/D1P": [
+        "USB_90R"
+      ],
+      "/D1_N": [
+        "USB_90R"
+      ],
+      "/D1_P": [
         "USB_90R"
       ],
       "/D2N": [
@@ -555,6 +567,12 @@
         "USB_90R"
       ],
       "/D4P": [
+        "USB_90R"
+      ],
+      "/D4_N": [
+        "USB_90R"
+      ],
+      "/D4_P": [
         "USB_90R"
       ]
     },
