@@ -5,11 +5,10 @@
 	(uuid "f968fbcd-e4e6-402c-b27d-9750a091b1fe")
 	(paper "A4")
 	(title_block
-		(title "GL850G_USB_Hub_Reversed")
+		(title "GL850G_USB_Hub")
 		(date "2025-12-08")
 		(rev "1")
 		(company "Stelmach")
-		(comment 1 "Reverse engineered from Aliexpress board")
 	)
 	(lib_symbols
 		(symbol "0.My_Library:GL850G_HH"
@@ -5163,7 +5162,7 @@
 		)
 		(uuid fe29ce5e-a440-48ba-8e5f-d899f49a61bf)
 	)
-	(text "V1.0: Release notes"
+	(text "V1.2: Release notes"
 		(exclude_from_sim no)
 		(at 125.73 169.926 0)
 		(effects
@@ -5176,7 +5175,7 @@
 		)
 		(uuid "e1bd71aa-102e-44bd-8cf9-8151a9e8b9aa")
 	)
-	(text "- Removed R8\n- D9 changed to D2\n- Reset jumper removed\n- D1 fixed polarity\n- Changed values of R35, R0_2, R10 to \n   adjust LED brightness\n- Replaced AP2151WG with AP2141WG to fix \n   output logic\n- Changed electrolytic to ceramic capacitor\n- Changed USB-A connectors\n- Added standoff holes\n- \n- Added external power supply input\n- [[ Went back to 0603 components ]]\n"
+	(text "- Removed R8\n- D9 changed to D2\n- Reset jumper removed\n- Changed values of R35, R0_2, R10 to \n   adjust LED brightness\n- Replaced AP2151WG with AP2141WG to fix \n   output logic\n- Changed electrolytic to ceramic capacitor\n- Changed USB-A connectors\n- Added standoff holes\n- Fixed USB uplink traces\n- Went back to 0603 components\n"
 		(exclude_from_sim no)
 		(at 125.73 172.72 0)
 		(effects
@@ -7531,7 +7530,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 143.51) (xy 264.16 143.51)
+			(xy 252.73 143.51) (xy 265.43 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8711,7 +8710,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 142.24) (xy 264.16 143.51)
+			(xy 265.43 142.24) (xy 265.43 143.51)
 		)
 		(stroke
 			(width 0)
@@ -9080,12 +9079,12 @@
 		(uuid "29708c0d-7e53-4045-acad-c80d066898c7")
 	)
 	(label "OVCUR_FLG"
-		(at 100.33 144.78 180)
+		(at 100.33 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2b373737-2433-4ee4-ad9d-2bd3ffe91b8b")
 	)
@@ -10025,7 +10024,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "10k"
 			(at 86.614 185.166 0)
 			(effects
 				(font
@@ -11563,7 +11562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3V"
+		(property "Value" "pself"
 			(at 114.046 172.974 0)
 			(effects
 				(font
@@ -12318,11 +12317,11 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
-		(uuid "4766431c-abb6-4b76-b43e-ca4f3886b7e2")
-		(property "Reference" "R68"
+		(dnp no)
+		(uuid "46cd0c96-48ef-4d01-a04c-33db4d1aafc3")
+		(property "Reference" "R12"
 			(at 53.34 58.674 0)
 			(effects
 				(font
@@ -12413,15 +12412,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fbaecf9f-b1eb-47ca-b169-c7c44c4910de")
+			(uuid "9a35cf91-e56b-4ee9-8f4a-8985bbdb7560")
 		)
 		(pin "2"
-			(uuid "92876b7a-7eff-4af9-93fb-5c09a13b61b2")
+			(uuid "eaaec74b-49a5-4ace-a3de-daab3a5bd5d6")
 		)
 		(instances
 			(project "GL850G"
 				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
-					(reference "R68")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -14949,7 +14948,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "5.1k"
 			(at 87.63 179.832 90)
 			(effects
 				(font
@@ -16755,6 +16754,120 @@
 			(project "GL850G"
 				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 49.53 59.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae67d419-6abc-4531-9650-8d7bb8e47e1c")
+		(property "Reference" "R11"
+			(at 48.26 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k_1%"
+			(at 48.26 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 49.53 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fa88848-0702-4b63-947a-fecf8d21d6c3")
+		)
+		(pin "2"
+			(uuid "91eaf3d1-711a-4ee3-87f5-e1a9fb3c58c3")
+		)
+		(instances
+			(project "GL850G"
+				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -18916,7 +19029,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 264.16 142.24 0)
+		(at 265.43 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18924,7 +19037,7 @@
 		(dnp no)
 		(uuid "e15907c5-5470-49e4-86ff-7f6d81ac362d")
 		(property "Reference" "#PWR016"
-			(at 264.16 146.05 0)
+			(at 265.43 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18933,7 +19046,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 263.906 138.684 0)
+			(at 265.176 138.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18941,7 +19054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 142.24 0)
+			(at 265.43 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18950,7 +19063,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 142.24 0)
+			(at 265.43 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18959,7 +19072,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 264.16 142.24 0)
+			(at 265.43 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19643,8 +19756,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3V"
-			(at 257.81 139.7 90)
+		(property "Value" "pself"
+			(at 258.826 139.446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19864,120 +19977,6 @@
 			(project "GL850G"
 				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 49.53 59.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "f9752d16-8e7b-42f3-ac65-7136b5bbf9d2")
-		(property "Reference" "R67"
-			(at 48.26 58.674 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k_1%"
-			(at 48.26 60.706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 49.53 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28d84d25-f0f3-4354-a5c6-7191fb6efcc6")
-		)
-		(pin "2"
-			(uuid "f2889ced-71d1-42ca-b5d9-c63f1c77031a")
-		)
-		(instances
-			(project "GL850G"
-				(path "/f968fbcd-e4e6-402c-b27d-9750a091b1fe"
-					(reference "R67")
 					(unit 1)
 				)
 			)
